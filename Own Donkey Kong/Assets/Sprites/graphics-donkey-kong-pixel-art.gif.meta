@@ -1,0 +1,2305 @@
+fileFormatVersion: 2
+guid: cb5ad49ac4a8e024793615dbe569408c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941ec113195f0f74291fc1bb95e14109
+      internalID: 1740194135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a692af336190abe4ba7c0af7f80bab4e
+      internalID: -1163674100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c06a3238b99a124a9e952f8ce57279d
+      internalID: 907358382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba857a50340857429d080c4de8fdbdb
+      internalID: -1377862088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a76efbdddb8f55498ba04ab8296722c
+      internalID: 767464622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1046d5a0ae95b49b47760a2d1822cb
+      internalID: -890441772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f10012966227614f9c82af26e9f7071
+      internalID: -625185086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7581c9408f72ff347a9f43c55252e180
+      internalID: -786266955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_8
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 508.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb67e6ca809d99f40901ceb0510e4f59
+      internalID: -887387493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449fcdc95acdd384c958d9d7ca9f270a
+      internalID: -348270943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90e3096224bcac41a48eee7be515dcd
+      internalID: -1658653568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1290b6ad9a3228e4d955ba7abf362ba0
+      internalID: 1938626158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_12
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291d2bb24fca7b84fa281ee58a44c8f8
+      internalID: -1578166083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_13
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa3faf9c4da24d49945ac9e5e66f6f7
+      internalID: 1607712410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_14
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cea5c700f75e24f86af78eb9e23fb4
+      internalID: -586804245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c9d63e540574c4783ad0a48cf44b39
+      internalID: 1148981859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2424d6e499eed43a70f5a4e1f268c9
+      internalID: 708473271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_17
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 458.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc343a970b7f14498a9fd4b348b885a
+      internalID: -665357586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c329ebbf1b3c3f478e127c554947c65
+      internalID: -1647480750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_19
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1a4953b9dfaad4787dea5f871dbc5f
+      internalID: 1800018970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_20
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855f0bccf3bda6747a9a2cf3dc9188dd
+      internalID: 706324801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_21
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dff64f527195d44ba3d96731491a9cc
+      internalID: 976589648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_22
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912fb242c3ad39a4baf942aba1b8e1ee
+      internalID: -180989908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_23
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d5f2b5b3ff7ce41a77a0f5e48cb2ee
+      internalID: -1863341232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d90c41899650843842b23fb53b1c9c
+      internalID: 1111353043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_25
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c47edb6d5adc2444889a80a23fa6934
+      internalID: 1496139745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_26
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 408.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b98060531843143a36714df1360f22
+      internalID: -25963112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f560ee332df7e48bc9c6aecda8afa6
+      internalID: -330031362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_28
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd319fd1942bb04ea899d8bbd1d3564
+      internalID: 1498415822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_29
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cee530bebf715444a45e691c2d9bf72
+      internalID: -386984482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_30
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fae2619abce52747b320c020e05fa11
+      internalID: -1460121669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_31
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1987057ef2c948644a6029d9ffd8b886
+      internalID: 1196922857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_32
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5ebab4995d5024c9fbcc8597229015
+      internalID: 879436455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_33
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65077b298c5106144b1c7d5e686a52ce
+      internalID: -365637468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_34
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d06d96664b504a4d8168ca516b884c0
+      internalID: -1468842621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_35
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 358.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3418cffefc32c84c8059449a3397593
+      internalID: -344779407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb0ec90ac4e0894d98333e3f285aa99
+      internalID: 180097565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_37
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b172363cf522d842bebf1133ede6e44
+      internalID: 1668850859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_38
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db13fd7910fdd294e8f1949b96dddca8
+      internalID: 602036823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_39
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248d92160b2efa94c8e7edab6ddc8950
+      internalID: -1585160384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_40
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44b8787dd13f9a448e9a91b45db18fb
+      internalID: 1724870395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_41
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f138ac97598d1b4ab090d9b54db65d0
+      internalID: 828908417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b87ae23484ea243b9191895893b82e
+      internalID: -1693934213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_43
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22692cda5e0cb824d9cc591caf1ac14b
+      internalID: 1092296076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_44
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 308.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dfd128ba71df64f9896633fcb08194
+      internalID: 931119167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_45
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5203e0e1e1a4d1842ac83bc7001be075
+      internalID: -161601123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_46
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c40b36725d19b4dba25f3745626f49
+      internalID: 759558024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_47
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dca0c8b0b65364081636713a7ab5c9
+      internalID: -1650299463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_48
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbb804628e748d4d9409540e9023b67
+      internalID: 1003155081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_49
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37b3f7bfebcc264285b807c3a7f6545
+      internalID: 48981237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_50
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127c46a7eb5336547a7ba0d5baf9543e
+      internalID: 2078216891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_51
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c730d78b9305fe64fa0898007524b0ac
+      internalID: 802331153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_52
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dcd7ada77d455479c8ca38bb2fad30
+      internalID: -2088671522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_53
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 258.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c38cd3356bddf419873458fb9f65f2
+      internalID: -1531341136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_54
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af8290a306451045a7a3a48c49b94f5
+      internalID: -1564086831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_55
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527ad753cec101a44bef644f7201c6d5
+      internalID: -79984418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_56
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6df4b3c106f62144bba5112c3377131
+      internalID: -783973077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_57
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09db30ea2c31e4b42af92b036e982663
+      internalID: -23910962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_58
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0162a1e6cefd0fa44a93fd636b6e508e
+      internalID: 869745982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_59
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82660a6d269a1804cbb3789037686944
+      internalID: -910206923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_60
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0ea6afc72b4604caec99f359eab0e9
+      internalID: -145627775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_61
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346e773dfd0ffc6478cbf71b8033d0b0
+      internalID: 2132627803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_62
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 208.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9730a3fdda5978d4c99f541ee4eb8dad
+      internalID: 604778026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_63
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32508b4f6d50c7745994e7750f712ad6
+      internalID: 2017780056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_64
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6591b89a18378904a87d2f9071a2e0fe
+      internalID: -36539118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_65
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e038d406c2fa048429bbd34821624654
+      internalID: 971444050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_66
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f379e8c8f4c0d68409a14bc9ed2e7a84
+      internalID: -339011470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_67
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4263617bf451f46ab5e1316cec9f35
+      internalID: -425748495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_68
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b67064a311c1a43942d2645641cbf1
+      internalID: -1932248872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_69
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c40c2cf2fc20ce4b8d882bd1450827d
+      internalID: -303406567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_70
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac53f2d66c6db1469d31d4bf0dcd774
+      internalID: -46000154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_71
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 158.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc03d538b19ca944c94ac39ed5217494
+      internalID: -1655041530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_72
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143febd8ba1ced64d819bc4ff62d622b
+      internalID: 1113103272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_73
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d2eabca186a0b448489b4adcb2498e
+      internalID: 681169508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_74
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b9e51b3e13e394e8c07c214533c544
+      internalID: 665248744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_75
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4d7df240eaa4e4ba70e2037fa64369
+      internalID: 2014591456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_76
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5851090b5eb6e45b91fb9090dbe9fd
+      internalID: -1134630055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_77
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8be5d4a0d21cb742a0e3ccb6dda9d93
+      internalID: -1884008179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_78
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abe69f68b808f148bbb8cf4ce9c2e69
+      internalID: -946538631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_79
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91245d791d288f64eb2ee5281aee8ecb
+      internalID: 2074366419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_80
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 108.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2ffbb2d124bef45a909fe7be09a3e1
+      internalID: 1555633505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_81
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7549d5cae8b7724abd53a1d86626f15
+      internalID: 823672582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_82
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f777ee1bca54547818a82bdac270a0
+      internalID: 2021022744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_83
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4635a06a61b10b848bcd5feac8914f8b
+      internalID: 55547574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_84
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58b29185071d6b4eb93e83ed771abcf
+      internalID: -1259073800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_85
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2892fc24f0c543e4283c538f4083b980
+      internalID: -704346637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_86
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19416a56ab544645a5ed2bf3000d39c
+      internalID: 1558494727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_87
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d117577284d9b4eb152f3e4d201acd
+      internalID: 991376528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_88
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3e58a836b737d41b7f9b1b7d0de87a
+      internalID: -310365202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_89
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 58.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16235f932606a7240a36a056dd846714
+      internalID: -727823142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_90
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d461598b9f48653428df2c491d904bec
+      internalID: -567895173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_91
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f687a62deb8c014a90970d2fa1154e7
+      internalID: -1085576275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_92
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bd06d483feb9a40abe49e2bc968939
+      internalID: 1787775064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_93
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fbaa93acb1bd74eae5312b53dbb18a
+      internalID: 1992031953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_94
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3256a5598144341878cbfd2264a52f
+      internalID: -615027441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_95
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bede59202a9f3b4bb93b4376130010b
+      internalID: -1570798708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_96
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e71d9078397fd54ab992dba160c1396
+      internalID: -1223497035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_97
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad60d8ae575aa5498cc598753350eb6
+      internalID: -143084827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: graphics-donkey-kong-pixel-art_98
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 8.18182
+        width: 61.666668
+        height: 50.81818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5439a9d6e3226e43882cb0d5df67bc7
+      internalID: 800038495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      graphics-donkey-kong-pixel-art_0: 1740194135
+      graphics-donkey-kong-pixel-art_1: -1163674100
+      graphics-donkey-kong-pixel-art_10: -1658653568
+      graphics-donkey-kong-pixel-art_11: 1938626158
+      graphics-donkey-kong-pixel-art_12: -1578166083
+      graphics-donkey-kong-pixel-art_13: 1607712410
+      graphics-donkey-kong-pixel-art_14: -586804245
+      graphics-donkey-kong-pixel-art_15: 1148981859
+      graphics-donkey-kong-pixel-art_16: 708473271
+      graphics-donkey-kong-pixel-art_17: -665357586
+      graphics-donkey-kong-pixel-art_18: -1647480750
+      graphics-donkey-kong-pixel-art_19: 1800018970
+      graphics-donkey-kong-pixel-art_2: 907358382
+      graphics-donkey-kong-pixel-art_20: 706324801
+      graphics-donkey-kong-pixel-art_21: 976589648
+      graphics-donkey-kong-pixel-art_22: -180989908
+      graphics-donkey-kong-pixel-art_23: -1863341232
+      graphics-donkey-kong-pixel-art_24: 1111353043
+      graphics-donkey-kong-pixel-art_25: 1496139745
+      graphics-donkey-kong-pixel-art_26: -25963112
+      graphics-donkey-kong-pixel-art_27: -330031362
+      graphics-donkey-kong-pixel-art_28: 1498415822
+      graphics-donkey-kong-pixel-art_29: -386984482
+      graphics-donkey-kong-pixel-art_3: -1377862088
+      graphics-donkey-kong-pixel-art_30: -1460121669
+      graphics-donkey-kong-pixel-art_31: 1196922857
+      graphics-donkey-kong-pixel-art_32: 879436455
+      graphics-donkey-kong-pixel-art_33: -365637468
+      graphics-donkey-kong-pixel-art_34: -1468842621
+      graphics-donkey-kong-pixel-art_35: -344779407
+      graphics-donkey-kong-pixel-art_36: 180097565
+      graphics-donkey-kong-pixel-art_37: 1668850859
+      graphics-donkey-kong-pixel-art_38: 602036823
+      graphics-donkey-kong-pixel-art_39: -1585160384
+      graphics-donkey-kong-pixel-art_4: 767464622
+      graphics-donkey-kong-pixel-art_40: 1724870395
+      graphics-donkey-kong-pixel-art_41: 828908417
+      graphics-donkey-kong-pixel-art_42: -1693934213
+      graphics-donkey-kong-pixel-art_43: 1092296076
+      graphics-donkey-kong-pixel-art_44: 931119167
+      graphics-donkey-kong-pixel-art_45: -161601123
+      graphics-donkey-kong-pixel-art_46: 759558024
+      graphics-donkey-kong-pixel-art_47: -1650299463
+      graphics-donkey-kong-pixel-art_48: 1003155081
+      graphics-donkey-kong-pixel-art_49: 48981237
+      graphics-donkey-kong-pixel-art_5: -890441772
+      graphics-donkey-kong-pixel-art_50: 2078216891
+      graphics-donkey-kong-pixel-art_51: 802331153
+      graphics-donkey-kong-pixel-art_52: -2088671522
+      graphics-donkey-kong-pixel-art_53: -1531341136
+      graphics-donkey-kong-pixel-art_54: -1564086831
+      graphics-donkey-kong-pixel-art_55: -79984418
+      graphics-donkey-kong-pixel-art_56: -783973077
+      graphics-donkey-kong-pixel-art_57: -23910962
+      graphics-donkey-kong-pixel-art_58: 869745982
+      graphics-donkey-kong-pixel-art_59: -910206923
+      graphics-donkey-kong-pixel-art_6: -625185086
+      graphics-donkey-kong-pixel-art_60: -145627775
+      graphics-donkey-kong-pixel-art_61: 2132627803
+      graphics-donkey-kong-pixel-art_62: 604778026
+      graphics-donkey-kong-pixel-art_63: 2017780056
+      graphics-donkey-kong-pixel-art_64: -36539118
+      graphics-donkey-kong-pixel-art_65: 971444050
+      graphics-donkey-kong-pixel-art_66: -339011470
+      graphics-donkey-kong-pixel-art_67: -425748495
+      graphics-donkey-kong-pixel-art_68: -1932248872
+      graphics-donkey-kong-pixel-art_69: -303406567
+      graphics-donkey-kong-pixel-art_7: -786266955
+      graphics-donkey-kong-pixel-art_70: -46000154
+      graphics-donkey-kong-pixel-art_71: -1655041530
+      graphics-donkey-kong-pixel-art_72: 1113103272
+      graphics-donkey-kong-pixel-art_73: 681169508
+      graphics-donkey-kong-pixel-art_74: 665248744
+      graphics-donkey-kong-pixel-art_75: 2014591456
+      graphics-donkey-kong-pixel-art_76: -1134630055
+      graphics-donkey-kong-pixel-art_77: -1884008179
+      graphics-donkey-kong-pixel-art_78: -946538631
+      graphics-donkey-kong-pixel-art_79: 2074366419
+      graphics-donkey-kong-pixel-art_8: -887387493
+      graphics-donkey-kong-pixel-art_80: 1555633505
+      graphics-donkey-kong-pixel-art_81: 823672582
+      graphics-donkey-kong-pixel-art_82: 2021022744
+      graphics-donkey-kong-pixel-art_83: 55547574
+      graphics-donkey-kong-pixel-art_84: -1259073800
+      graphics-donkey-kong-pixel-art_85: -704346637
+      graphics-donkey-kong-pixel-art_86: 1558494727
+      graphics-donkey-kong-pixel-art_87: 991376528
+      graphics-donkey-kong-pixel-art_88: -310365202
+      graphics-donkey-kong-pixel-art_89: -727823142
+      graphics-donkey-kong-pixel-art_9: -348270943
+      graphics-donkey-kong-pixel-art_90: -567895173
+      graphics-donkey-kong-pixel-art_91: -1085576275
+      graphics-donkey-kong-pixel-art_92: 1787775064
+      graphics-donkey-kong-pixel-art_93: 1992031953
+      graphics-donkey-kong-pixel-art_94: -615027441
+      graphics-donkey-kong-pixel-art_95: -1570798708
+      graphics-donkey-kong-pixel-art_96: -1223497035
+      graphics-donkey-kong-pixel-art_97: -143084827
+      graphics-donkey-kong-pixel-art_98: 800038495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
