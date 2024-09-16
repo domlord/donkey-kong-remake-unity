@@ -76,5 +76,7 @@ public class BarrelScript : MonoBehaviour
             _barrelHorizontalSpeed = 0;
             barrelDescendLadderSpeed = 1;
         }
+
+        if (other.CompareTag("DestroyBarrelPoint")) Destroy(gameObject);
     }
 }

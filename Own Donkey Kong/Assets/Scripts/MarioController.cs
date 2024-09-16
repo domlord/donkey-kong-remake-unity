@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -62,9 +63,8 @@ public class MarioController : MonoBehaviour
     private bool _isInTopOfLadderCollider;
     private bool _isInMiddleOfLadderCollider;
     private int _yVelocityAnimatorIndex;
+    private int _deadAnimationAnimatorIndex;
 
-
-    // private bool _canMoveLeftRight; //Used to lock horizontal player movement when the player is climbing on a ladder
 
     private void Awake()
     {
@@ -75,6 +75,7 @@ public class MarioController : MonoBehaviour
         _marioSpriteRenderer = GetComponent<SpriteRenderer>();
         _isAlive = true;
         _userInterFaceManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UserInterFaceManager>();
+        _deadAnimationAnimatorIndex = Animator.StringToHash("isDead");
     }
 
     private void Start()
@@ -90,6 +91,8 @@ public class MarioController : MonoBehaviour
 
     private void Update()
     {
+        animator.SetBool(_deadAnimationAnimatorIndex, !_isAlive);
+
         if (_isAlive)
         {
             Debug.Log(marioRigidBody.velocity.y);
@@ -189,15 +192,7 @@ public class MarioController : MonoBehaviour
     {
         if ((other.collider.CompareTag("Barrel") || other.collider.CompareTag("CementTub")) && !_isHammering)
         {
-            /*/
-       This function (not technically a function, but you know what I mean) is used to reset all components- e.g. mario dies, all barrels deleted, back to start place etc.
-       */
-            _userInterFaceManager.OnPlayerDamage(GameManager.Instance.NumberOfLives,
-                _userInterFaceManager.marioLifeIconHolder, _userInterFaceManager.marioLifeIcon);
-            Scene currentScene =
-                SceneManager
-                    .GetActiveScene(); //cannot be done on awake or start, as the scene may change during playtime (player gets to end of level)
-            SceneManager.LoadScene(currentScene.name);
+            OnMarioDeath(4f, 1f);
         }
     }
 
@@ -383,12 +378,41 @@ public class MarioController : MonoBehaviour
         }
     }
 
-    private void OnMarioDeath()
+    /*
+     * totalTimeToPauseFor: the sum of the time between collision with a barrel, and the time that the death animation will play for
+     * startOfDeathAnimationDelay: the length of time in seconds that the game will pause befor starting the death animation
+     */
+    private void OnMarioDeath(float totalTimeToPauseFor, float startOfDeathAnimationDelay)
     {
+        KillMarioResetScene(2f, 2f);
     }
 
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, boxCastDistance, groundLayer);
+    }
+
+    private void KillMario()
+    {
+        _isAlive = false;
+    }
+
+    private void ReloadSceneSetNumberOfLives()
+    {
+        _userInterFaceManager.OnPlayerDamage(GameManager.Instance.NumberOfLives,
+            _userInterFaceManager.marioLifeIconHolder, _userInterFaceManager.marioLifeIcon);
+        Scene currentScene =
+            SceneManager
+                .GetActiveScene(); //cannot be done on awake or start, as the scene may change during playtime (player gets to end of level)
+        SceneManager.LoadScene(currentScene.name);
+    }
+
+    private void KillMarioResetScene(float totalTimeToPauseFor, float startOfDeathAnimationDelay)
+    {
+        PauseManager.Instance.PauseGameForTime(2f);
+        Debug.Log("should be setting mario to dead");
+        Invoke(nameof(KillMario), 2);
+        PauseManager.Instance.PauseGameForTime(2f);
+        Invoke(nameof(ReloadSceneSetNumberOfLives), 2);
     }
 }

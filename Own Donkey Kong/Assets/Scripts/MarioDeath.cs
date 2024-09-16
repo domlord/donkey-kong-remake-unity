@@ -17,14 +17,19 @@ public class MarioDeath : MonoBehaviour
     {
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.collider.CompareTag("Barrel"))
-        {
-            Debug.Log("owie");
-
-          
-            // }
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     if ((other.collider.CompareTag("Barrel") || other.collider.CompareTag("CementTub")) && !_isHammering)
+    //     {
+    //         /*/
+    //    This function (not technically a function, but you know what I mean) is used to reset all components- e.g. mario dies, all barrels deleted, back to start place etc.
+    //    */
+    //         _userInterFaceManager.OnPlayerDamage(GameManager.Instance.NumberOfLives,
+    //             _userInterFaceManager.marioLifeIconHolder, _userInterFaceManager.marioLifeIcon);
+    //         Scene currentScene =
+    //             SceneManager
+    //                 .GetActiveScene(); //cannot be done on awake or start, as the scene may change during playtime (player gets to end of level)
+    //         SceneManager.LoadScene(currentScene.name);
+    //     }
+    // }
 }
