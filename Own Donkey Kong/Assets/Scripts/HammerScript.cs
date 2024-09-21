@@ -20,6 +20,7 @@ public class HammerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        // PauseManager.Instance.PauseGameForTime(hammerCollisionSoundEffect.length);
         PauseManager.Instance.PauseGameForTime(hammerCollisionSoundEffect.length);
         AudioManagerScript.Instance.PlaySoundFxClip(hammerCollisionSoundEffect, transform, .02f,
             "SmashGameObjectSoundEffect");

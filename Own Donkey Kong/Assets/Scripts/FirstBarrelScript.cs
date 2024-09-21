@@ -49,7 +49,6 @@ public class FirstBarrelScript : MonoBehaviour
 
         if (other.CompareTag("FirstBarrelMoveLeftAnimatorTrigger"))
         {
-            Debug.Log("trig");
             firstBarrelAnimator.SetBool(_firstBarrelMoveLeftAnimatorIndex, true);
         }
     }

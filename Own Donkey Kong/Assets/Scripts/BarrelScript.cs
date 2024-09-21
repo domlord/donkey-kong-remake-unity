@@ -31,7 +31,6 @@ public class BarrelScript : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        Debug.Log(_funBarrelValue);
     }
 
     // Update is called once per frame
