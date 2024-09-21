@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Image = UnityEngine.UI.Image;
 
 public class UserInterFaceManager : MonoBehaviour
@@ -11,7 +12,9 @@ public class UserInterFaceManager : MonoBehaviour
     public GameObject marioLifeIcon;
     [SerializeField] private TextMeshProUGUI marioScore;
     [SerializeField] private AudioClip scoreSoundEffect;
-
+    [SerializeField] private TextMeshProUGUI bonusValueText;
+    private float _bonusValue;
+    private float _bonusValueTimeChange;
 
     /**
      * life counter holder represents the image in the UI that the life icons are assigned to as children
@@ -20,9 +23,34 @@ public class UserInterFaceManager : MonoBehaviour
      */
     private void Start()
     {
+        _bonusValueTimeChange = 1;
         SetLivesCounter(GameManager.Instance.NumberOfLives, marioLifeIconHolder, marioLifeIcon);
         marioScore.SetText(GameManager.Instance.MarioScore.ToString());
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            _bonusValue = 4500;
+            bonusValueText.SetText(_bonusValue.ToString());
+        }
     }
+
+    private void Update()
+    {
+        if (_bonusValueTimeChange > 0)
+        {
+            _bonusValueTimeChange -= Time.deltaTime;
+        }
+        else
+        {
+            _bonusValue -= 100;
+            bonusValueText.SetText(_bonusValue.ToString());
+            _bonusValueTimeChange = 1;
+        }
+    }
+
+    // private IEnumerator UpdateBonusEverySecond()
+    // {
+    //     yield return new WaitForSeconds(1);
+    // }
 
     private void SetLivesCounter(int livesCount, Image lifeIconHolder, GameObject lifeIcon)
     {
@@ -65,7 +93,7 @@ public class UserInterFaceManager : MonoBehaviour
         GameManager.Instance.ChangeScore(valueToChangeScoreBy);
         marioScore.SetText(GameManager.Instance.MarioScore.ToString());
         scoreEffectText.text = valueToChangeScoreBy.ToString();
-       TextMeshPro scoreEffectTextInstance =
+        TextMeshPro scoreEffectTextInstance =
             Instantiate(scoreEffectText, positionToSpawnPoints.position,
                 Quaternion.identity); //should be on mario's position,
         //or the position of the object collected/ barrel jumped over, as opposed to the position of the ui manager itself

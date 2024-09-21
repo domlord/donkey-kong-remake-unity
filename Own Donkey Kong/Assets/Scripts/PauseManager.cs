@@ -20,7 +20,6 @@ public class PauseManager : MonoBehaviour
 
     public void PauseGame()
     {
-        Debug.Log("pause game running");
         IsPaused = true;
         Time.timeScale = 0f;
         InputManager.PlayerInput.DeactivateInput();
@@ -33,7 +32,6 @@ public class PauseManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        Debug.Log("resume game running");
         IsPaused = false;
         Time.timeScale = 1f;
         InputManager.PlayerInput.ActivateInput(); // need to patch to switch to ui elements if needed
@@ -54,9 +52,8 @@ public class PauseManager : MonoBehaviour
 
     private IEnumerator PauseGameEnumerator(float timeToPauseGame)
     {
-        Debug.Log("enumerator running");
         PauseGame();
-        float gamePausedTimer = Time.realtimeSinceStartup + timeToPauseGame;
+        var gamePausedTimer = Time.realtimeSinceStartup + timeToPauseGame;
         while (Time.realtimeSinceStartup < gamePausedTimer)
         {
             yield return 0;

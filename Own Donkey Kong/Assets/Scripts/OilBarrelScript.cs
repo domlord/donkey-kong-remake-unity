@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,7 +27,6 @@ public class OilBarrelScript : MonoBehaviour
             foreach (GameObject fireball in fireballs)
             {
                 StartCoroutine(DelayBeforeEnablingFireball(fireballSpawnRate));
-                Debug.Log("delayed");
                 fireball.gameObject.SetActive(true);
             }
         }
@@ -44,11 +44,14 @@ public class OilBarrelScript : MonoBehaviour
             }
         }
 
-        if (SceneManager.GetActiveScene().name == "Level 1" && fireballs[0].activeInHierarchy)
+
+        if (!fireballs[0].IsUnityNull() && SceneManager.GetActiveScene().name == "Level 1" &&
+            fireballs[0].activeInHierarchy)
         {
             oilBarrelAnimator.SetBool(_hasFireBallJumpedOutAnimatorIndex, true);
         }
     }
+
 
     private static IEnumerator DelayBeforeEnablingFireball(float fireBallSpawnRate)
     {

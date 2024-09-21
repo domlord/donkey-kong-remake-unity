@@ -46,6 +46,7 @@ TagManager:
   - TopOfLadder
   - BottomOfLadder
   - MiddleOfLadder
+  - DestroyBarrelPoint
   layers:
   - Default
   - TransparentFX

@@ -281,7 +281,7 @@ MonoBehaviour:
   marioRigidBody: {fileID: 4051077859970491379}
   jumpStrength: 4
   horizontalSpeed: 2.2
-  climbStrength: 0.01
+  climbStrength: 1.75
   playerControlsActionAsset: {fileID: -944628639613478452, guid: ceb3d13143c2c3d468c0d497aa98ef15, type: 3}
   userActionsActionAsset: {fileID: 0}
   animator: {fileID: 7807972006742051888}
@@ -300,6 +300,11 @@ MonoBehaviour:
   scoreEffect: {fileID: 3715410843657027997, guid: 67ff3fb2cb945db40be16d3e9a89e1e0, type: 3}
   walkMusicClip: {fileID: 8300000, guid: 8ea26cf4ec889264aa35c64cb5cd68da, type: 3}
   jumpSoundEffect: {fileID: 8300000, guid: a110144d4972dda4abd7d891c2aa29a5, type: 3}
+  deathSoundEffect: {fileID: 8300000, guid: d0e1a244ab33b5346b4f0e4021b8d0bb, type: 3}
+  marioMountTopOfPlatformSprites:
+  - {fileID: -875259800, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
+  - {fileID: 853847850, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
+  - {fileID: -1212147326, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
 --- !u!95 &7807972006742051888
 Animator:
   serializedVersion: 5

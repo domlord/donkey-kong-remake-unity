@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3842897040331556662, guid: 7abd7823007112a4e8d67e0f8fa2f8b1, type: 3}
       propertyPath: m_Size.y
-      value: 0.77074516
+      value: 0.38296652
       objectReference: {fileID: 0}
     - target: {fileID: 3842897040331556662, guid: 7abd7823007112a4e8d67e0f8fa2f8b1, type: 3}
       propertyPath: m_Offset.x
@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3842897040331556662, guid: 7abd7823007112a4e8d67e0f8fa2f8b1, type: 3}
       propertyPath: m_Offset.y
-      value: -0.9582475
+      value: -1.1521368
       objectReference: {fileID: 0}
     - target: {fileID: 5866921301500574077, guid: 7abd7823007112a4e8d67e0f8fa2f8b1, type: 3}
       propertyPath: m_IsActive
@@ -462,6 +462,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9898f3f7583d494459711471f42c0ac1, type: 3}
+--- !u!1 &1108140467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108140468}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108140468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108140467}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.035724, y: -0.88068455, z: 20753.004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1198960773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,3 +617,4 @@ SceneRoots:
   - {fileID: 1711747695}
   - {fileID: 474011207}
   - {fileID: 1198960773}
+  - {fileID: 1108140468}

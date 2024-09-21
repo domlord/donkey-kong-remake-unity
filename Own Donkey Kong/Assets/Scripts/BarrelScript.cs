@@ -31,7 +31,6 @@ public class BarrelScript : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        Debug.Log(_funBarrelValue);
     }
 
     // Update is called once per frame
@@ -76,5 +75,7 @@ public class BarrelScript : MonoBehaviour
             _barrelHorizontalSpeed = 0;
             barrelDescendLadderSpeed = 1;
         }
+
+        if (other.CompareTag("DestroyBarrelPoint")) Destroy(gameObject);
     }
 }

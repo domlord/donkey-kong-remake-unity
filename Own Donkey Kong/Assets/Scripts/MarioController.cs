@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -34,6 +35,8 @@ public class MarioController : MonoBehaviour
     [SerializeField] private GameObject scoreEffect;
     [SerializeField] private AudioClip walkMusicClip;
     [SerializeField] private AudioClip jumpSoundEffect;
+    [SerializeField] private AudioClip deathSoundEffect;
+    [SerializeField] private Sprite[] marioMountTopOfPlatformSprites;
 
 
     private GameObject _scoreEffect;
@@ -62,9 +65,8 @@ public class MarioController : MonoBehaviour
     private bool _isInTopOfLadderCollider;
     private bool _isInMiddleOfLadderCollider;
     private int _yVelocityAnimatorIndex;
+    private int _marioClimbLadderTopAnimatorIndex;
 
-
-    // private bool _canMoveLeftRight; //Used to lock horizontal player movement when the player is climbing on a ladder
 
     private void Awake()
     {
@@ -75,6 +77,7 @@ public class MarioController : MonoBehaviour
         _marioSpriteRenderer = GetComponent<SpriteRenderer>();
         _isAlive = true;
         _userInterFaceManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UserInterFaceManager>();
+        _marioClimbLadderTopAnimatorIndex = Animator.StringToHash("isMountingPlatform");
     }
 
     private void Start()
@@ -92,7 +95,6 @@ public class MarioController : MonoBehaviour
     {
         if (_isAlive)
         {
-            Debug.Log(marioRigidBody.velocity.y);
             if (!_isInBottomOfLadderCollider && !_isInMiddleOfLadderCollider && !_isInTopOfLadderCollider)
 
             {
@@ -189,15 +191,7 @@ public class MarioController : MonoBehaviour
     {
         if ((other.collider.CompareTag("Barrel") || other.collider.CompareTag("CementTub")) && !_isHammering)
         {
-            /*/
-       This function (not technically a function, but you know what I mean) is used to reset all components- e.g. mario dies, all barrels deleted, back to start place etc.
-       */
-            _userInterFaceManager.OnPlayerDamage(GameManager.Instance.NumberOfLives,
-                _userInterFaceManager.marioLifeIconHolder, _userInterFaceManager.marioLifeIcon);
-            Scene currentScene =
-                SceneManager
-                    .GetActiveScene(); //cannot be done on awake or start, as the scene may change during playtime (player gets to end of level)
-            SceneManager.LoadScene(currentScene.name);
+            OnMarioDeath(2f, 1f);
         }
     }
 
@@ -240,6 +234,11 @@ public class MarioController : MonoBehaviour
         if (other.CompareTag("TopOfLadder"))
         {
             _isInTopOfLadderCollider = true;
+            if (_isInMiddleOfLadderCollider && InputManager.Instance.ClimbIsPressed)
+            {
+                animator.SetBool(_marioClimbLadderTopAnimatorIndex, true);
+                animator.SetBool("isMountingPlatform", true);
+            }
         }
 
         if (other.CompareTag("MiddleOfLadder"))
@@ -267,13 +266,15 @@ public class MarioController : MonoBehaviour
         {
             _isClimbingLadder = false;
             _isInTopOfLadderCollider = false;
+            animator.SetBool("isMountingPlatform", false);
         }
     }
 
 
     private void OnMove()
     {
-        marioRigidBody.velocity = new Vector2(_moveDirection.x * horizontalSpeed, marioRigidBody.velocity.y);
+        marioRigidBody.velocity =
+            new Vector2(_moveDirection.x * horizontalSpeed, marioRigidBody.velocity.y);
     }
 
     private void HandleClimb()
@@ -310,7 +311,7 @@ public class MarioController : MonoBehaviour
                 _isClimbingLadder = true;
                 gameObject.layer = LayerMask.NameToLayer(passableObjects);
                 //any kind of lower case reference like this, e.g. gameObject, transform references the component of the object that the script is attached to
-                marioRigidBody.transform.position += new Vector3(0, climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -321,7 +322,7 @@ public class MarioController : MonoBehaviour
             {
                 gameObject.layer = LayerMask.NameToLayer(passableObjects);
                 _isClimbingLadder = true;
-                marioRigidBody.transform.position += new Vector3(0, -climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, -climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -338,7 +339,7 @@ public class MarioController : MonoBehaviour
             {
                 _isClimbingLadder = true;
                 gameObject.layer = LayerMask.NameToLayer(passableObjects);
-                marioRigidBody.transform.position += new Vector3(0, climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -348,7 +349,7 @@ public class MarioController : MonoBehaviour
             {
                 gameObject.layer = LayerMask.NameToLayer(passableObjects);
                 _isClimbingLadder = true;
-                marioRigidBody.transform.position += new Vector3(0, -climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, -climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -364,7 +365,7 @@ public class MarioController : MonoBehaviour
             {
                 _isClimbingLadder = true;
                 gameObject.layer = LayerMask.NameToLayer("Mario");
-                marioRigidBody.transform.position += new Vector3(0, climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -374,7 +375,7 @@ public class MarioController : MonoBehaviour
             {
                 gameObject.layer = LayerMask.NameToLayer("Mario");
                 _isClimbingLadder = true;
-                marioRigidBody.transform.position += new Vector3(0, -climbStrength);
+                marioRigidBody.transform.position += new Vector3(0, -climbStrength) * Time.deltaTime;
                 marioRigidBody.velocity = new Vector2(0f, 0f);
                 marioRigidBody.gravityScale = 0f;
                 animator.SetBool(_isClimbingAnimatorIndex, true);
@@ -383,12 +384,54 @@ public class MarioController : MonoBehaviour
         }
     }
 
-    private void OnMarioDeath()
+    /*
+     * totalTimeToPauseFor: the sum of the time between collision with a barrel, and the time that the death animation will play for
+     * startOfDeathAnimationDelay: the length of time in seconds that the game will pause befor starting the death animation
+     */
+    private void OnMarioDeath(float timeToPauseAfterBarrelImpact, float timeToPlayMarioDeathAnimationFor)
     {
+        StartCoroutine(PauseGameKillMarioResetScene(timeToPauseAfterBarrelImpact));
     }
 
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, boxCastDistance, groundLayer);
+    }
+
+    //Game paused for the first parameter in seconds after collision with a barrel, and then will delay restarting the scene after the 
+    //second parameter in seconds
+    private IEnumerator PauseGameKillMarioResetScene(float timeToPauseAfterBarrelImpact)
+    {
+        PauseManager.Instance.PauseGame();
+
+        //These timers are used to delay code execution
+        var delayAfterBarrelHitTimer = Time.realtimeSinceStartup + timeToPauseAfterBarrelImpact;
+        while (Time.realtimeSinceStartup < delayAfterBarrelHitTimer)
+        {
+            yield return 0;
+        }
+
+        animator.SetBool(_isJumpingAnimatorIndex, false);
+        marioRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX;
+        marioRigidBody.velocity = new Vector2(0, 0);
+        _isAlive = false;
+        animator.Play("Death");
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+        AudioManagerScript.Instance.PlaySoundFxClip(deathSoundEffect, transform, .2f);
+
+        //These timers are used to delay code execution
+        var playAnimationBeforeResettingGameTimer = Time.realtimeSinceStartup + deathSoundEffect.length;
+        while (Time.realtimeSinceStartup < playAnimationBeforeResettingGameTimer)
+        {
+            yield return 0;
+        }
+
+        _userInterFaceManager.OnPlayerDamage(GameManager.Instance.NumberOfLives,
+            _userInterFaceManager.marioLifeIconHolder, _userInterFaceManager.marioLifeIcon);
+        var currentScene =
+            SceneManager
+                .GetActiveScene(); //cannot be done on awake or start, as the scene may change during playtime (player gets to end of level)
+        SceneManager.LoadScene(currentScene.name);
+        PauseManager.Instance.ResumeGame();
     }
 }
