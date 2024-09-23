@@ -40,6 +40,8 @@ public class InputManager : MonoBehaviour
         _moveInputAction = PlayerInput.actions["Move"];
         _jumpInputAction = PlayerInput.actions["Jump"];
         _goDownLadderInputAction = PlayerInput.actions["GoDownLadder"];
+
+        DontDestroyOnLoad(gameObject);
     }
 
 

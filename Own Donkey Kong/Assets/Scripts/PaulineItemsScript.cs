@@ -17,12 +17,13 @@ public class PaulineItemsScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Mario"))
         {
-            if (SceneManager.GetActiveScene().buildIndex == 0)
+            Debug.Log("dadada");
+            if (SceneManager.GetActiveScene().name == "Level 1")
             {
                 _userInterFaceManager.ChangeMarioScore(300, transform);
             }
 
-            else if (SceneManager.GetActiveScene().buildIndex == 1)
+            else if (SceneManager.GetActiveScene().name == "Level 2")
             {
                 _userInterFaceManager.ChangeMarioScore(500, transform);
             }

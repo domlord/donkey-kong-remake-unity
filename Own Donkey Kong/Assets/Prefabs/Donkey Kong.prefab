@@ -181,3 +181,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrel: {fileID: 173476306391687278, guid: 99c6deb4d06d1a4448dd8fe901056758, type: 3}
   barrelSpawnRate: 3
+  donkeyKongScript: {fileID: 1899245281339697938}

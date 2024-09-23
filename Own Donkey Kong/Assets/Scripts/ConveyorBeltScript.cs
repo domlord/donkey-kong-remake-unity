@@ -7,56 +7,61 @@ public class ConveyorBeltScript : MonoBehaviour
 {
     private List<GameObject> _objectsOnConveyorBelt;
     [SerializeField] private float movementForce;
+    [SerializeField] private bool startConveyorDirectionRight;
+    [SerializeField] private bool startConveyorDirectionLeft;
     private bool _isMovingLeft;
+
     private bool _isMovingRight;
-    private bool _hasTouchedBelt;
+
+    // private bool _hasTouchedBelt;
     private float _beltMovementTimer;
     [SerializeField] private float howLongBeltIsMovingDirection;
 
-    private void Awake()
+    private void Start()
     {
-        _isMovingLeft = true;
+        if (startConveyorDirectionRight)
+        {
+            _isMovingRight = true;
+        }
+        else if (startConveyorDirectionLeft)
+        {
+            _isMovingLeft = true;
+        }
+
+        _beltMovementTimer = howLongBeltIsMovingDirection;
     }
 
     private void Update()
     {
-        if (_hasTouchedBelt)
+        if (_isMovingLeft)
         {
-            if (_isMovingLeft)
+            if (_beltMovementTimer > 0)
             {
-                if (_beltMovementTimer > 0)
-                {
-                    _beltMovementTimer -= Time.deltaTime;
-                }
-                else
-                {
-                    _isMovingLeft = false;
-                    _isMovingRight = true;
-                    _beltMovementTimer = howLongBeltIsMovingDirection;
-                }
+                _beltMovementTimer -= Time.deltaTime;
             }
-
-            if (_isMovingRight)
+            else
             {
-                if (_beltMovementTimer > 0)
-                {
-                    _beltMovementTimer -= Time.deltaTime;
-                }
-                else
-                {
-                    _isMovingRight = false;
-                    _isMovingLeft = true;
-                    _beltMovementTimer = howLongBeltIsMovingDirection;
-                }
+                _isMovingLeft = false;
+                _isMovingRight = true;
+                _beltMovementTimer = howLongBeltIsMovingDirection;
+            }
+        }
+
+        else if (_isMovingRight)
+        {
+            if (_beltMovementTimer > 0)
+            {
+                _beltMovementTimer -= Time.deltaTime;
+            }
+            else
+            {
+                _isMovingRight = false;
+                _isMovingLeft = true;
+                _beltMovementTimer = howLongBeltIsMovingDirection;
             }
         }
     }
 
-    private void OnCollisionEnter2D()
-    {
-        _hasTouchedBelt = true;
-        _beltMovementTimer = howLongBeltIsMovingDirection;
-    }
 
     private void OnCollisionStay2D(Collision2D other)
     {

@@ -47,6 +47,8 @@ TagManager:
   - BottomOfLadder
   - MiddleOfLadder
   - DestroyBarrelPoint
+  - DonkeyKong
+  - MovingLadder
   layers:
   - Default
   - TransparentFX
@@ -64,7 +66,7 @@ TagManager:
   - Barrel
   - Fireball
   - MarioPointsInteractionLayer
-  - 
+  - DonkeyKong
   - 
   - 
   - 
