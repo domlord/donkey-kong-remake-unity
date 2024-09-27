@@ -16,6 +16,8 @@ public class PauseManager : MonoBehaviour
         {
             Instance = this;
         }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PauseGame()

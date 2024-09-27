@@ -27,7 +27,10 @@ public class OilBarrelScript : MonoBehaviour
             foreach (GameObject fireball in fireballs)
             {
                 StartCoroutine(DelayBeforeEnablingFireball(fireballSpawnRate));
-                fireball.gameObject.SetActive(true);
+                if (fireball.gameObject != null)
+                {
+                    fireball.gameObject.SetActive(true);
+                }
             }
         }
     }

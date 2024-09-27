@@ -31,12 +31,16 @@ public class MarioController : MonoBehaviour
     [SerializeField] private float timeToHammerFor;
     [SerializeField] private GameObject hammerThrowable;
     [SerializeField] private AudioClip levelOneBackgroundMusic;
+    [SerializeField] private AudioClip levelTwoBackgroundMusic;
     [SerializeField] private float hammerThrowUpForce;
     [SerializeField] private GameObject scoreEffect;
     [SerializeField] private AudioClip walkMusicClip;
     [SerializeField] private AudioClip jumpSoundEffect;
     [SerializeField] private AudioClip deathSoundEffect;
     [SerializeField] private Sprite[] marioMountTopOfPlatformSprites;
+    [SerializeField] private GameObject fireball;
+    [SerializeField] private Sprite fireballHammerSprite;
+    [SerializeField] private FireballScript FireballScript;
 
 
     private GameObject _scoreEffect;
@@ -51,6 +55,7 @@ public class MarioController : MonoBehaviour
     private Sprite _marioSprite;
     private GameObject _hammerColliderObject;
     private bool _isFacingLeft;
+    private bool _isInMovingLadderCollider;
 
 
     private Vector2 _moveDirection;
@@ -66,6 +71,13 @@ public class MarioController : MonoBehaviour
     private bool _isInMiddleOfLadderCollider;
     private int _yVelocityAnimatorIndex;
     private int _marioClimbLadderTopAnimatorIndex;
+
+    public delegate void MarioHammeringAction();
+
+    public delegate void MarioNoLongerHammeringAction();
+
+    public static event MarioHammeringAction OnMarioHammering;
+    public static event MarioNoLongerHammeringAction OnMarioNotHammering;
 
 
     private void Awake()
@@ -89,13 +101,20 @@ public class MarioController : MonoBehaviour
             _backgroundMusic = AudioManagerScript.Instance.CreateSoundFxAudioSource(levelOneBackgroundMusic, .2f);
             _backgroundMusic.tag = "BackgroundMusic";
         }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            // change this to be unique on each level
+            _backgroundMusic = AudioManagerScript.Instance.CreateSoundFxAudioSource(levelTwoBackgroundMusic, .2f);
+            _backgroundMusic.tag = "BackgroundMusic";
+        }
     }
 
     private void Update()
     {
         if (_isAlive)
         {
-            if (!_isInBottomOfLadderCollider && !_isInMiddleOfLadderCollider && !_isInTopOfLadderCollider)
+            if (!_isInBottomOfLadderCollider && !_isInMiddleOfLadderCollider && !_isInTopOfLadderCollider &&
+                !_isInMovingLadderCollider)
 
             {
                 marioRigidBody.gravityScale = 1f;
@@ -155,14 +174,18 @@ public class MarioController : MonoBehaviour
 
             if (_isHammering)
             {
+                if (OnMarioHammering != null)
+                    OnMarioHammering();
                 _walkAudioSource.enabled = false;
                 _backgroundMusic.Stop();
                 if (_hammerTimeLeft >
                     0) //when player collides with the hammer trigger, set the bool isHammering to true, and also set the hammer timer to begin
                 {
+                    Debug.Log("should reduce time every second");
                     _hammerTimeLeft -= Time.deltaTime;
                     if (InputManager.Instance.JumpJustPressed)
                     {
+                        Debug.Log("throw hammer up");
                         _isHammering = false;
                         Destroy(GameObject.FindGameObjectWithTag("hammerAudio"));
                         GameObject hammerThrownUp = Instantiate(hammerThrowable,
@@ -171,6 +194,10 @@ public class MarioController : MonoBehaviour
                         hammerThrownUp.GetComponent<Rigidbody2D>().velocity =
                             hammerThrownUp.transform.up * hammerThrowUpForce;
                         _backgroundMusic.Play();
+                        if (OnMarioNotHammering != null)
+                        {
+                            OnMarioNotHammering();
+                        }
 
 
                         _hammerTimeLeft = 0;
@@ -202,6 +229,11 @@ public class MarioController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("MovingLadder"))
+        {
+            _isInMovingLadderCollider = true;
+        }
+
         if (other.CompareTag("AboveBarrel") && _isAlive)
         {
             _userInterFaceManager.ChangeMarioScore(100, transform);
@@ -234,11 +266,13 @@ public class MarioController : MonoBehaviour
         if (other.CompareTag("TopOfLadder"))
         {
             _isInTopOfLadderCollider = true;
-            if (_isInMiddleOfLadderCollider && InputManager.Instance.ClimbIsPressed)
+            if ((_isInMiddleOfLadderCollider || _isInMovingLadderCollider) && InputManager.Instance.ClimbIsPressed)
             {
                 animator.SetBool(_marioClimbLadderTopAnimatorIndex, true);
                 animator.SetBool("isMountingPlatform", true);
             }
+
+            Debug.Log("top of ladder");
         }
 
         if (other.CompareTag("MiddleOfLadder"))
@@ -249,6 +283,11 @@ public class MarioController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (other.CompareTag("MovingLadder"))
+        {
+            _isInMovingLadderCollider = false;
+        }
+
         if (other.CompareTag("BottomOfLadder")) //player reaches bottom of ladder and decides to move left and right
         {
             _isClimbingLadder = false;
@@ -261,9 +300,9 @@ public class MarioController : MonoBehaviour
             _isInMiddleOfLadderCollider = false;
         }
 
-
         if (other.CompareTag("TopOfLadder"))
         {
+            Debug.Log("leavetop");
             _isClimbingLadder = false;
             _isInTopOfLadderCollider = false;
             animator.SetBool("isMountingPlatform", false);
@@ -296,7 +335,8 @@ public class MarioController : MonoBehaviour
         }
 
 
-        if (_isInMiddleOfLadderCollider && !(_isInBottomOfLadderCollider || _isInTopOfLadderCollider) &&
+        if ((_isInMiddleOfLadderCollider || _isInMovingLadderCollider) &&
+            !(_isInBottomOfLadderCollider || _isInTopOfLadderCollider) &&
             _isClimbingLadder)
         {
             marioRigidBody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
@@ -304,7 +344,7 @@ public class MarioController : MonoBehaviour
         }
 
         const string passableObjects = "Passable Objects";
-        if (_isInMiddleOfLadderCollider && !_isHammering)
+        if ((_isInMiddleOfLadderCollider || _isInMovingLadderCollider) && !_isHammering)
         {
             if (InputManager.Instance.ClimbIsPressed)
             {

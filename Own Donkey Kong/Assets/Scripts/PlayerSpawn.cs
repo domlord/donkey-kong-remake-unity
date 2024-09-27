@@ -7,6 +7,6 @@ public class PlayerSpawn : MonoBehaviour
     private void Awake()
     {
         Instantiate(mario, transform.position, Quaternion.identity);
-        GameObject.FindGameObjectWithTag("Mario").GetComponent<MarioController>().enabled = true;
+        // GameObject.FindGameObjectWithTag("Mario").GetComponent<MarioController>().enabled = true;
     }
 }

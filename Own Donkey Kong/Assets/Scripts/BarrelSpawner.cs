@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BarrelSpawner : MonoBehaviour
@@ -7,6 +8,7 @@ public class BarrelSpawner : MonoBehaviour
     [SerializeField] private float barrelSpawnRate;
     private Transform _barrelSpawnerPosition;
     private float _timer;
+    [SerializeField] private DonkeyKongScript donkeyKongScript;
 
     // Start is called before the first frame update
     private void Start()
@@ -14,6 +16,10 @@ public class BarrelSpawner : MonoBehaviour
         _barrelSpawnerPosition = transform;
     }
 
+    private void Awake()
+    {
+        donkeyKongScript.gameObject.SetActive(true);
+    }
 
     private void SpawnBarrel()
     {
