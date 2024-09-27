@@ -296,6 +296,7 @@ MonoBehaviour:
   timeToHammerFor: 20
   hammerThrowable: {fileID: 5015238223616101482, guid: c6dcb4b7874a02d4d94eb72ae460086f, type: 3}
   levelOneBackgroundMusic: {fileID: 8300000, guid: 96b9d5d8d4a81b24ba14a7c793bdaa6c, type: 3}
+  levelTwoBackgroundMusic: {fileID: 8300000, guid: e5848b36bee2e8244a8e6fa8f739c7bb, type: 3}
   hammerThrowUpForce: 20
   scoreEffect: {fileID: 3715410843657027997, guid: 67ff3fb2cb945db40be16d3e9a89e1e0, type: 3}
   walkMusicClip: {fileID: 8300000, guid: 8ea26cf4ec889264aa35c64cb5cd68da, type: 3}
@@ -305,6 +306,8 @@ MonoBehaviour:
   - {fileID: -875259800, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
   - {fileID: 853847850, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
   - {fileID: -1212147326, guid: 22240116828e13f429bc3ce6a3daa153, type: 3}
+  fireball: {fileID: 0}
+  fireballHammerSprite: {fileID: -1265686917, guid: 4c01f669b1ce01344b39ddf50f6ec79b, type: 3}
 --- !u!95 &7807972006742051888
 Animator:
   serializedVersion: 5

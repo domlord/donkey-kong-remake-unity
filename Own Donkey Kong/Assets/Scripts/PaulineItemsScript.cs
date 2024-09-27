@@ -17,7 +17,6 @@ public class PaulineItemsScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Mario"))
         {
-            Debug.Log("dadada");
             if (SceneManager.GetActiveScene().name == "Level 1")
             {
                 _userInterFaceManager.ChangeMarioScore(300, transform);

@@ -38,6 +38,9 @@ public class MarioController : MonoBehaviour
     [SerializeField] private AudioClip jumpSoundEffect;
     [SerializeField] private AudioClip deathSoundEffect;
     [SerializeField] private Sprite[] marioMountTopOfPlatformSprites;
+    [SerializeField] private GameObject fireball;
+    [SerializeField] private Sprite fireballHammerSprite;
+    [SerializeField] private FireballScript FireballScript;
 
 
     private GameObject _scoreEffect;
@@ -69,6 +72,13 @@ public class MarioController : MonoBehaviour
     private int _yVelocityAnimatorIndex;
     private int _marioClimbLadderTopAnimatorIndex;
 
+    public delegate void MarioHammeringAction();
+
+    public delegate void MarioNoLongerHammeringAction();
+
+    public static event MarioHammeringAction OnMarioHammering;
+    public static event MarioNoLongerHammeringAction OnMarioNotHammering;
+
 
     private void Awake()
     {
@@ -91,10 +101,10 @@ public class MarioController : MonoBehaviour
             _backgroundMusic = AudioManagerScript.Instance.CreateSoundFxAudioSource(levelOneBackgroundMusic, .2f);
             _backgroundMusic.tag = "BackgroundMusic";
         }
-        else
+        else if (SceneManager.GetActiveScene().name == "Level 2")
         {
             // change this to be unique on each level
-            _backgroundMusic = AudioManagerScript.Instance.CreateSoundFxAudioSource(levelOneBackgroundMusic, .2f);
+            _backgroundMusic = AudioManagerScript.Instance.CreateSoundFxAudioSource(levelTwoBackgroundMusic, .2f);
             _backgroundMusic.tag = "BackgroundMusic";
         }
     }
@@ -164,6 +174,8 @@ public class MarioController : MonoBehaviour
 
             if (_isHammering)
             {
+                if (OnMarioHammering != null)
+                    OnMarioHammering();
                 _walkAudioSource.enabled = false;
                 _backgroundMusic.Stop();
                 if (_hammerTimeLeft >
@@ -182,6 +194,10 @@ public class MarioController : MonoBehaviour
                         hammerThrownUp.GetComponent<Rigidbody2D>().velocity =
                             hammerThrownUp.transform.up * hammerThrowUpForce;
                         _backgroundMusic.Play();
+                        if (OnMarioNotHammering != null)
+                        {
+                            OnMarioNotHammering();
+                        }
 
 
                         _hammerTimeLeft = 0;

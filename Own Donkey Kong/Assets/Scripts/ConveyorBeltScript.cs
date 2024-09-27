@@ -9,13 +9,23 @@ public class ConveyorBeltScript : MonoBehaviour
     [SerializeField] private float movementForce;
     [SerializeField] private bool startConveyorDirectionRight;
     [SerializeField] private bool startConveyorDirectionLeft;
+    [SerializeField] private Animator conveyorBeltLeftWheelAnimator;
+    [SerializeField] private Animator conveyorBeltRightWheelAnimator;
     private bool _isMovingLeft;
+    private int _isConveyorMovingLeftAnimatorIndex;
+    private int _isConveyorMovingRightAnimatorIndex;
 
     private bool _isMovingRight;
 
     // private bool _hasTouchedBelt;
     private float _beltMovementTimer;
     [SerializeField] private float howLongBeltIsMovingDirection;
+
+    private void Awake()
+    {
+        _isConveyorMovingLeftAnimatorIndex = Animator.StringToHash("isConveyorBeltMovingLeft");
+        _isConveyorMovingRightAnimatorIndex = Animator.StringToHash("isConveyorBeltMovingRight");
+    }
 
     private void Start()
     {
@@ -35,6 +45,10 @@ public class ConveyorBeltScript : MonoBehaviour
     {
         if (_isMovingLeft)
         {
+            conveyorBeltLeftWheelAnimator.SetBool(_isConveyorMovingLeftAnimatorIndex, true);
+            conveyorBeltLeftWheelAnimator.SetBool(_isConveyorMovingRightAnimatorIndex, false);
+            conveyorBeltRightWheelAnimator.SetBool(_isConveyorMovingLeftAnimatorIndex, true);
+            conveyorBeltRightWheelAnimator.SetBool(_isConveyorMovingRightAnimatorIndex, false);
             if (_beltMovementTimer > 0)
             {
                 _beltMovementTimer -= Time.deltaTime;
@@ -49,6 +63,10 @@ public class ConveyorBeltScript : MonoBehaviour
 
         else if (_isMovingRight)
         {
+            conveyorBeltLeftWheelAnimator.SetBool(_isConveyorMovingLeftAnimatorIndex, false);
+            conveyorBeltLeftWheelAnimator.SetBool(_isConveyorMovingRightAnimatorIndex, true);
+            conveyorBeltRightWheelAnimator.SetBool(_isConveyorMovingLeftAnimatorIndex, false);
+            conveyorBeltRightWheelAnimator.SetBool(_isConveyorMovingRightAnimatorIndex, true);
             if (_beltMovementTimer > 0)
             {
                 _beltMovementTimer -= Time.deltaTime;

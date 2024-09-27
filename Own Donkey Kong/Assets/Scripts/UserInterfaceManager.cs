@@ -13,7 +13,7 @@ public class UserInterFaceManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI marioScore;
     [SerializeField] private AudioClip scoreSoundEffect;
     [SerializeField] private TextMeshProUGUI bonusValueText;
-    private float _bonusValue;
+    private int _bonusValue;
     private float _bonusValueTimeChange;
 
     /**
@@ -39,18 +39,21 @@ public class UserInterFaceManager : MonoBehaviour
         {
             _bonusValueTimeChange -= Time.deltaTime;
         }
+
+        // if (_bonusValue == 0)
+        // {
+        //     _bonusValue = 0;
+        // }
+
         else
         {
-            _bonusValue -= 100;
+            if (_bonusValue != 0)
+                _bonusValue -= 100;
+
             bonusValueText.SetText(_bonusValue.ToString());
             _bonusValueTimeChange = 1;
         }
     }
-
-    // private IEnumerator UpdateBonusEverySecond()
-    // {
-    //     yield return new WaitForSeconds(1);
-    // }
 
     private void SetLivesCounter(int livesCount, Image lifeIconHolder, GameObject lifeIcon)
     {
